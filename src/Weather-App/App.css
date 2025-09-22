@@ -1,0 +1,102 @@
+input{
+  text-align: left;
+  padding-left: 20px;
+}
+
+form{
+ position:relative;
+   margin-right: 5.735em;
+
+}
+
+.container{
+  background-color: #333;
+  width: 100%;
+  height:490px;
+  z-index:0;
+}
+
+.header-flex{
+   justify-content:right;
+  height:678px;
+  display:flex;
+
+  opacity:80px;
+
+}
+
+form input{
+  width:398px;
+   height:55px;
+   border-radius: 20px;
+   border: 2px solid black;
+   padding-right: 80px;
+   margin-top:30px;
+}
+
+form button{
+position:absolute;
+  width:74px;
+  height:34px;
+   top: -50px;
+  right: 10px;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #A02BA0 0%, #333 100%) border-box;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 16px;
+  top: 39px;
+
+}
+
+.header{
+
+  height: 678px;
+  width: 100%;
+}
+
+.main-grid{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "place-text weather-icon";
+  position:absolute;
+  top:176px;
+ gap:20px;
+ align-items:center;
+ justify-items:center;
+ padding:20px;
+
+}
+
+.place-temperature {
+
+  grid-area: place-text;
+ 
+}
+
+.weather-icon {
+  grid-area: weather-icon;
+  max-width:80%;
+  height:auto;
+
+  
+
+}
+
+.place-text{
+  font-size:5em;
+  color:#F3E8E8;
+  font-weight:bold;
+  z-index:1;
+  margin:0;
+}
+
+.temperature-text{
+  background:linear-gradient(90deg, #FFD9FD, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size:10em;
+  font-weight:bold;
+  z-index:1;
+  margin:0;
+}
