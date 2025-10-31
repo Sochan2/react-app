@@ -1,0 +1,28 @@
+.App{
+  display:flex;
+  justify-content: center;
+}
+
+.count-number{
+  text-align: center;
+}
+
+.count-title{
+  text-align: center;
+}
+
+button{
+  margin:5px;
+  width:10em;
+  height:3em;
+  background-color: #333;
+  border-radius: 20px;
+  color:#fff;
+}
+
+button:hover{
+  background-color: #333;
+  border: 1px solid #333;
+  color:#333;
+  background-color: #fff;
+}
