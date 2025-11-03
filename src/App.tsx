@@ -4,6 +4,7 @@ import { useWeather } from './Weather-App/hooks/useWeather';
 import Options from './Weather-App/components/options';
 import {useState} from 'react';
 import SimpleCounterApp from './Simple-counter/App';
+import HideShowPassword from './Show-hide-password/App';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <SimpleCounterApp />
+      <HideShowPassword />
     </div>
   );
 }
