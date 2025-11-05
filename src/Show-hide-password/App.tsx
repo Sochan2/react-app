@@ -1,5 +1,5 @@
 import { useState, ChangeEvent } from 'react';
-
+import "./Password.css";
 
 export default function HideShowPassword(){
   const [password, setPassword] = useState<string>("");
@@ -23,10 +23,18 @@ export default function HideShowPassword(){
   */
 
   return(
+    <>
+    <div className="title">
+       <h2>Password hide and reveal app</h2>
+    </div>
     <form>
       <input type={showPassword?"text":"password"} value= {password} onChange = {handleEvent} placeholder = "Enter your password"/>
-      <button type="button" onClick={togglePassword}>{showPassword?"Hide":"Reveal"}</button>
+      <button className={showPassword?"reveal-deactivate":"reveal-activate"} type="button" onClick={togglePassword}>{showPassword?"Hide":"Reveal"}</button>
     </form>
+    </>
+      
+
+   
   )
 
 
