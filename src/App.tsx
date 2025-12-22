@@ -3,9 +3,6 @@ import WeatherForecast from './Weather-App/components/weather-forecast';
 import { useWeather } from './Weather-App/hooks/useWeather';
 import Options from './Weather-App/components/options';
 import {useState} from 'react';
-import SimpleCounterApp from './Simple-counter/App';
-import HideShowPassword from './Show-hide-password/App';
-
 
 function App() {
   const[city, setCity] = useState("Tokyo");
@@ -15,7 +12,10 @@ function App() {
 
   return (
     <div className="App">
-      <HideShowPassword />
+      <Header data={weatherData} setCity={setCity} />
+      <WeatherForecast  />
+      <Options data={weatherData} />
+
     </div>
   );
 }
@@ -27,9 +27,3 @@ export default App;
 //city state 
 //useWeather reload
 //fetch new weather data
-
-/*
-  <Header data={weatherData} setCity={setCity} />
-      <WeatherForecast  />
-      <Options data={weatherData} />
-      */
